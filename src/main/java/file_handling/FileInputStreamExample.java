@@ -6,7 +6,7 @@ import java.io.IOException;
 public class FileInputStreamExample {
     public static void main(String[] args) {
 
-        String filePath = "example.txt";
+        String filePath = "src/main/resources/example.txt";
 
         try {
             FileInputStream inputStream = new FileInputStream(filePath);

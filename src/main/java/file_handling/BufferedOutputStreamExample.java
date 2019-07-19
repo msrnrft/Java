@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class BufferedOutputStreamExample {
 
-    final private static String FILE_PATH = "C:\\Users\\Misran Rifat\\Workspace\\Java\\src\\main\\resources\\example.txt";
+    final private static String FILE_PATH = "src/main/resources/example.txt";
 
     public static void main(String[] args) {
 
@@ -14,7 +14,7 @@ public class BufferedOutputStreamExample {
             FileOutputStream fileOutputStream = new FileOutputStream(FILE_PATH);
             BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
             String s = "Welcome to javaTpoint.";
-            byte b[] = s.getBytes();
+            byte[] b = s.getBytes();
             bufferedOutputStream.write(b);
             bufferedOutputStream.flush();
             bufferedOutputStream.close();
