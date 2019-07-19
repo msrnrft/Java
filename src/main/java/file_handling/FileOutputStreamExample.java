@@ -5,11 +5,13 @@ import java.io.FileOutputStream;
 
 public class FileOutputStreamExample {
 
+    private final static String FILE_PATH = "src/main/resources/example.txt";
+
     public static void main(String[] args) {
 
-        String filePath = "src/main/resources/example.txt";
+
         try {
-            FileOutputStream outputStream = new FileOutputStream(filePath);
+            FileOutputStream outputStream = new FileOutputStream(FILE_PATH);
             outputStream.write(65);
             outputStream.close();
             System.out.println("success...");
@@ -18,7 +20,7 @@ public class FileOutputStreamExample {
         }
 
         try {
-            FileOutputStream fout = new FileOutputStream(filePath);
+            FileOutputStream fout = new FileOutputStream(FILE_PATH);
             String s = "Welcome to javaTpoint.";
             byte[] b = s.getBytes();//converting string into byte array
             fout.write(b);
